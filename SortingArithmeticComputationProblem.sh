@@ -7,8 +7,8 @@ read b
 read c
 echo "a=" $a "b=" $b "c=" $c
 
-#uc4 compute c+a/b
-div=$(( $a / $b))
-ans = $(( $c + $div ))
+#uc5 compute a%b+c
+div=$(( $a % $b))
+ans = $(( $div + $c ))
 
-echo "c+a/b=" $ans
+echo "a%b+c=" $ans
