@@ -7,7 +7,8 @@ read b
 read c
 echo "a=" $a "b=" $b "c=" $c
 
-#uc2 compute a*b+c
+#uc4 compute c+a/b
+div=$(( $a / $b))
+ans = $(( $c + $div ))
 
-ans= $(( $a * $b + $c ))
- echo "a*b+c=" $ans
+echo "c+a/b=" $ans
